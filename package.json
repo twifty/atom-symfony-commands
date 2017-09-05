@@ -1,7 +1,7 @@
 {
   "name": "symfony-commands",
   "main": "./lib/symfony-commands",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Run Symfony commands from within the editor",
   "keywords": [],
   "consumedServices": {
