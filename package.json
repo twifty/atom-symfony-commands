@@ -3,7 +3,7 @@
   "main": "./lib/symfony-commands",
   "version": "0.1.0",
   "description": "Run Symfony commands from within the editor",
-  "keywords": [],
+  "keywords": ["symfony", "symfony2", "symfony3", "symfony4", "php", "terminal", "execute", "run"],
   "consumedServices": {
     "status-bar": {
       "versions": {
