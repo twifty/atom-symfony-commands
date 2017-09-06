@@ -16,7 +16,7 @@ The Symfony project must be setup correctly in order to list or run commands. If
 
 This package depends on `node-pty@>=0.7.0` which currently has an [issue](https://github.com/Tyriar/node-pty/issues/72) with losing data after a stream has closed. This causes some commands (for example `list`) to not output all data. The issue is currently being dealt with and this package will update its dependency as soon as it becomes available.
 
-Due to the above issue, running `clear` within the console when data has been lost will not work correctly. A sepearate issue is open with [`xterm`](https://github.com/sourcelair/xterm.js/issues/943#issuecomment-327272499). For now, calling `reset` will correctly clear and reset the terminal.
+Due to the above issue, running `clear` within the console after data has been lost will not work correctly. A sepearate issue was opened which [`xterm refuses to fix`](https://github.com/sourcelair/xterm.js/issues/943#issuecomment-327272499). For now, calling `reset` will correctly clear and reset the terminal.
 
 ##### License
 Copyright (c) 2017, Owen Parry (MIT License).
