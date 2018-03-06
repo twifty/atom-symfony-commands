@@ -1,3 +1,6 @@
 #!/bin/bash
 
 script -qfc "$(printf "%q " "$@")"
+
+# give node-pty time to consume the stream
+sleep .5
