@@ -28,7 +28,7 @@
   "dependencies": {
     "etch": ">=0.12.4",
     "atom-select-list": "^0.1.0",
-    "xterm": "~3",
+    "xterm": "2.9.2",
     "node-pty": ">=0.7.0",
     "resize-observer-polyfill": ">=1.4.2"
   },
