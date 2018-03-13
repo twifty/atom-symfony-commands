@@ -8,6 +8,7 @@ Run Symfony commands from within the editor.
 1. Multiple open projects.
 1. Running commands with all flags/options.
 1. Auto completion of command name (uses `fuzzaldrin`).
+1. Composer Update.
 
 The package also provides a modal window from which you can view all commands alongside the usage and help messages of each.
 
