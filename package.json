@@ -23,14 +23,13 @@
   "repository": "https://github.com/twifty/atom-symfony-commands.git",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.24.0 <2.0.0"
   },
   "dependencies": {
     "etch": ">=0.12.4",
     "atom-select-list": "^0.1.0",
     "xterm": "2.9.2",
-    "node-pty": ">=0.7.0",
-    "resize-observer-polyfill": ">=1.4.2"
+    "node-pty": ">=0.7.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
