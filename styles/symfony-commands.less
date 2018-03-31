@@ -1,9 +1,11 @@
+@import (less) "../node_modules/colletch/styles/colletch.less";
+
 @import "ui-variables";
 
 @import (inline) "../node_modules/xterm/dist/xterm.css";
 
 .symfony-commands {
-  font-size: @input-font-size;
+  font-size: @font-size;
   padding: @component-padding;
 
   .error {
@@ -114,18 +116,16 @@
 .symfony-console {
   display: flex;
   flex-direction: column;
-  min-height: -webkit-min-content;
+  font-size: 1.2em;
 
   .symfony-console-input {
     display: flex;
     align-items: center;
-    font-size: 1.25em;
 
     > .symfony-console-editor {
       flex-grow: 1;
       margin: 5px @component-padding;
       position: relative;
-      // font-size: 1em;
 
       > ol {
         position: absolute;
@@ -157,13 +157,8 @@
       }
     }
 
-    > .symfony-console-terminal {
-      font-size: 1.15em;
-    }
-
     > span {
       margin-left: @component-padding;
-      // font-size: @input-font-size;
       font-weight: bold;
     }
 
@@ -185,24 +180,6 @@
          box-shadow: none;
          background-color: @button-background-color-hover;
        }
-    }
-  }
-
-  xterm {
-    flex-grow: 1;
-    height: 0px;
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-
-    div {
-      margin-top: auto;
-    }
-
-    .xterm-rows {
-      > div > span {
-        display: inline-block;
-      }
     }
   }
 }

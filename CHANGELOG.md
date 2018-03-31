@@ -10,3 +10,9 @@
 * Added 'Composer Update' button
 * Removed ResizeObserver polyfill (now requires Atom v1.24)
 * Hides/Shows cursor
+
+## 0.3.0
+* Separated class logic
+* Changed folder structure
+* Removed `xterm` and `node-pty` dependencies
+* Added `colletch` as a dependency

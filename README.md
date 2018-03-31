@@ -3,7 +3,7 @@
 Run Symfony commands from within the editor.
 
 ##### Supports:
-1. Symfony 2 and Symfony 3.
+1. Symfony 2, 3 and 4.
 1. Interactive commands (For example `generate:bundle`).
 1. Multiple open projects.
 1. Running commands with all flags/options.

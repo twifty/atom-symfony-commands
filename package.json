@@ -11,7 +11,8 @@
     "php",
     "terminal",
     "execute",
-    "run"
+    "run",
+    "composer"
   ],
   "consumedServices": {
     "status-bar": {
@@ -28,8 +29,8 @@
   "dependencies": {
     "etch": ">=0.12.4",
     "atom-select-list": "^0.1.0",
-    "xterm": "2.9.2",
-    "node-pty": ">=0.7.0"
+    "shell-escape": "~0.2.0",
+    "colletch": "~0.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
