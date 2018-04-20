@@ -16,3 +16,6 @@
 * Changed folder structure
 * Removed `xterm` and `node-pty` dependencies
 * Added `colletch` as a dependency
+
+## 0.4.0
+* Enabled any `composer` command
