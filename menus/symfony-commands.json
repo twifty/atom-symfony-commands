@@ -1,31 +1,25 @@
 {
-  "context-menu": {
-    ".symfony-console": [
-      {"label": "Interrupt", "command": "symfony-console:interrupt"},
-      {"label": "Terminate", "command": "symfony-console:terminate"},
-      {"label": "Kill", "command": "symfony-console:kill"},
-      {"type": "separator"},
-      {"label": "Copy", "command": "symfony-console:copy"},
-      {"label": "Paste", "command": "symfony-console:paste"},
-      {"label": "Clear", "command": "symfony-console:clear"},
-      {"label": "Reset", "command": "symfony-console:reset"},
-      {"type": "separator"}
-    ]
-  },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "symfony-commands",
-          "submenu": [
-            {
-              "label": "Toggle",
-              "command": "symfony-commands:toggle"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+    "context-menu": {
+        ".symfony-console": [
+            {"label": "Interrupt", "command": "symfony-console:interrupt"},
+            {"label": "Terminate", "command": "symfony-console:terminate"},
+            {"label": "Kill", "command": "symfony-console:kill"},
+            {"type": "separator"},
+            {"label": "Copy", "command": "symfony-console:copy"},
+            {"label": "Paste", "command": "symfony-console:paste"},
+            {"label": "Clear", "command": "symfony-console:clear"},
+            {"label": "Reset", "command": "symfony-console:reset"},
+            {"type": "separator"}
+        ]
+    },
+    "menu": [{
+        "label": "Packages",
+        "submenu": [{
+            "label": "symfony-commands",
+            "submenu": [{
+                "label": "Toggle",
+                "command": "symfony-commands:toggle"
+            }]
+        }]
+    }]
 }

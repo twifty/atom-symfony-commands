@@ -1,183 +1,183 @@
 @import (less) "../node_modules/colletch/styles/colletch.less";
-
 @import "ui-variables";
 
 .symfony-commands {
-  font-size: @font-size;
-  padding: @component-padding;
-
-  .error {
+    font-size: @font-size;
     padding: @component-padding;
-    color: @text-color-error;
-    border: 1px solid @text-color-error;
-    margin-bottom: @component-padding;
-    border-radius: 5px;
-    text-align: center;
-    display: block;
-  }
 
-  .symfony-command-group {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 @component-padding;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .symfony-input-item {
-      flex: 1;
-      min-width: 200px;
-      padding: 0 @component-padding;
-    }
-  }
-
-  .symfony-input-button {
-    min-width: 50px;
-    margin: 0 @component-padding;
-    font-size: 1em;
-    line-height: 2em;
-  }
-
-  .symfony-command-description {
-    white-space: pre;
-    margin: 0.75em 1.75em;
-    border: 1px solid;
-    padding: @component-padding;
-    height: 10em;
-    overflow-y: auto;
-
-    info {
-      color: @text-color-info;
+    .error {
+        padding: @component-padding;
+        color: @text-color-error;
+        border: 1px solid @text-color-error;
+        margin-bottom: @component-padding;
+        border-radius: 5px;
+        text-align: center;
+        display: block;
     }
 
-    comment {
-      color: @text-color-warning;
-    }
+    .symfony-command-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 @component-padding;
+        flex-direction: row;
+        justify-content: space-between;
 
-    .symfony-command-description-header {
-      div {
-        padding-left: 1em;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-
-        li {
-          display: table-row;
-
-          span {
-            display: table-cell;
-            padding-left: 1em;
-          }
+        .symfony-input-item {
+            flex: 1;
+            min-width: 200px;
+            padding: 0 @component-padding;
         }
-      }
     }
-  }
+
+    .symfony-input-button {
+        min-width: 50px;
+        margin: 0 @component-padding;
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .symfony-command-description {
+        white-space: pre;
+        margin: 0.75em 1.75em;
+        border: 1px solid;
+        padding: @component-padding;
+        height: 10em;
+        overflow-y: auto;
+
+        info {
+            color: @text-color-info;
+        }
+
+        comment {
+            color: @text-color-warning;
+        }
+
+        .symfony-command-description-header {
+            div {
+                padding-left: 1em;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    display: table-row;
+
+                    span {
+                        display: table-cell;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .symfony-status-bar {
-  display: inline-block;
-  color: @text-color-subtle;
-  border: 1px solid @button-border-color;
-  background: fade(@button-background-color, 33%);
-  cursor: pointer;
-  vertical-align: middle;
-  position: relative;
-  padding: 0 .6em;
-  line-height: 1.8em;
-  margin-right: 0.6em;
+    display: inline-block;
+    color: @text-color-subtle;
+    border: 1px solid @button-border-color;
+    background: fade(@button-background-color, 33%);
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    padding: 0 0.6em;
+    line-height: 1.8em;
+    margin-right: 0.6em;
 
-  &:active {
-    background: transparent;
-  }
-  &.active {
-    color: @text-color-highlight;
-    background: @button-background-color;
-  }
+    &:active {
+        background: transparent;
+    }
+
+    &.active {
+        color: @text-color-highlight;
+        background: @button-background-color;
+    }
 }
 
 .symfony-command-list-item {
-  display: flex !important;
-  align-items: center;
+    display: flex !important;
+    align-items: center;
 
-  span:nth-child(2) {
-    margin: 0 10px;
-  }
+    span:nth-child(2) {
+        margin: 0 10px;
+    }
 
-  p {
-    word-wrap: break-word;
-    white-space: normal;
-    margin: 0;
-  }
+    p {
+        word-wrap: break-word;
+        white-space: normal;
+        margin: 0;
+    }
 }
 
 .symfony-console {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.2em;
-
-  .symfony-console-input {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    font-size: 1.2em;
 
-    > .symfony-console-editor {
-      flex-grow: 1;
-      margin: 5px @component-padding;
-      position: relative;
+    .symfony-console-input {
+        display: flex;
+        align-items: center;
 
-      > ol {
-        position: absolute;
-        width: 100%;
-        background-color: @base-background-color;
-        z-index: 1;
-        flex-grow: 1;
+        > .symfony-console-editor {
+            flex-grow: 1;
+            margin: 5px @component-padding;
+            position: relative;
 
-        > li {
-          padding: 0.25em 1em;
-          line-height: 2em;
-          border-bottom: 1px solid #181a1f;
+            > ol {
+                position: absolute;
+                width: 100%;
+                background-color: @base-background-color;
+                z-index: 1;
+                flex-grow: 1;
 
-          .character-match {
-            font-weight: bolder;
-            color: @text-color-info;
-            margin: 0;
-          }
+                > li {
+                    padding: 0.25em 1em;
+                    line-height: 2em;
+                    border-bottom: 1px solid #181a1f;
 
-          &.selected {
-            background-color: @background-color-selected;
-          }
+                    .character-match {
+                        font-weight: bolder;
+                        color: @text-color-info;
+                        margin: 0;
+                    }
 
-          &:hover, &:focus {
-            box-shadow: none;
-            background-color: @background-color-highlight;
-          }
+                    &.selected {
+                        background-color: @background-color-selected;
+                    }
+
+                    &:focus, &:hover {
+                        box-shadow: none;
+                        background-color: @background-color-highlight;
+                    }
+                }
+            }
         }
-      }
-    }
 
-    > span {
-      margin-left: @component-padding;
-      font-weight: bold;
-    }
+        > span {
+            margin-left: @component-padding;
+            font-weight: bold;
+        }
 
-    > button {
-      margin-right: @component-padding;
-      padding: 0 @component-padding*2;
-    }
+        > button {
+            margin-right: @component-padding;
+            padding: 0 @component-padding*2;
+        }
 
-    > select.form-control {
-       color: @text-color;
-       margin-left: @component-padding;
-       border-color: @button-border-color;
-       background-color: @button-background-color;
-       width: auto;
-       font-size: inherit;
-       padding: 0 @component-padding;
+        > select.form-control {
+            color: @text-color;
+            margin-left: @component-padding;
+            border-color: @button-border-color;
+            background-color: @button-background-color;
+            width: auto;
+            font-size: inherit;
+            padding: 0 @component-padding;
 
-       &:hover, &:focus {
-         box-shadow: none;
-         background-color: @button-background-color-hover;
-       }
+            &:focus, &:hover {
+                box-shadow: none;
+                background-color: @button-background-color-hover;
+            }
+        }
     }
-  }
 }
