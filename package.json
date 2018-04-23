@@ -33,7 +33,7 @@
         "etch": ">=0.12.4",
         "atom-select-list": "^0.1.0",
         "shell-escape": "~0.2.0",
-        "colletch": "file:../colletch"
+        "colletch": "^0.0.23"
     },
     "devDependencies": {
         "babel-eslint": "^7.2.3",
